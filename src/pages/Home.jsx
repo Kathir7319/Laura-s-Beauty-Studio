@@ -31,11 +31,9 @@ export default function Home({ onOpenBooking }) {
             <span>Cary, NC • Luxury Private Studio Sanctuary</span>
           </div>
 
-          {/* Centered Brand Seal (Stacked Emblem) */}
+          {/* Centered Brand Seal (Luxury Circular Medallion) */}
           <div className="flex justify-center pt-2">
-            <div className="p-3 rounded-full bg-white/80 shadow-soft border border-champagne-200/60">
-              <Logo variant="stacked" iconSize={72} />
-            </div>
+            <Logo variant="badge" />
           </div>
 
           {/* Headline & Subheadline */}

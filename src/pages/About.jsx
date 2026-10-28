@@ -133,7 +133,7 @@ export default function About({ onOpenBooking }) {
                 Our bespoke logo weaves together the delicate curvature of an eyelash arc, botanical renewal laurels, and the signature calligraphic "L" monogram. Rendered in champagne gold and soft rosewood, the emblem reflects our commitment to understated luxury and elevated artistry.
               </p>
               <div className="p-4 rounded-2xl bg-cream-50 border border-champagne-200/80 flex items-center gap-4">
-                <Logo variant="stacked" iconSize={56} />
+                <Logo variant="icon" iconSize={56} />
                 <div className="text-xs text-stone-500">
                   <p className="font-semibold text-charcoal-900">Official Brand Mark</p>
                   <p>Vector SVG geometry crafted for crisp display on all retina displays & mobile screens.</p>
