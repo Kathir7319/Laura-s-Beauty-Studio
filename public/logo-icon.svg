@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E5C79F"/>
+      <stop offset="45%" stop-color="#C59B64"/>
+      <stop offset="70%" stop-color="#DFCBAB"/>
+      <stop offset="100%" stop-color="#9A6F3B"/>
+    </linearGradient>
+    <linearGradient id="roseGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FAF1EF"/>
+      <stop offset="50%" stop-color="#F5DDD8"/>
+      <stop offset="100%" stop-color="#EAC3BC"/>
+    </linearGradient>
+    <linearGradient id="softBlush" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFDFD"/>
+      <stop offset="100%" stop-color="#FAF3F1"/>
+    </linearGradient>
+    <filter id="subtleGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#C59B64" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Outer background disc -->
+  <circle cx="100" cy="100" r="94" fill="url(#softBlush)" stroke="url(#goldGrad)" stroke-width="1.5"/>
+  <circle cx="100" cy="100" r="88" fill="none" stroke="url(#goldGrad)" stroke-width="0.75" stroke-dasharray="3 3" opacity="0.8"/>
+  <circle cx="100" cy="100" r="84" fill="url(#roseGrad)" opacity="0.45"/>
+
+  <!-- Botanical & Lash Flourishes (Left & Right) -->
+  <!-- Left Lash / Laurel arc -->
+  <path d="M 40 105 C 40 65 65 38 95 34 C 80 46 66 68 64 96 C 62 120 74 142 90 156 C 60 150 40 132 40 105 Z" 
+        fill="url(#goldGrad)" opacity="0.85"/>
+  <!-- Right Lash / Laurel arc -->
+  <path d="M 160 105 C 160 65 135 38 105 34 C 120 46 134 68 136 96 C 138 120 126 142 110 156 C 140 150 160 132 160 105 Z" 
+        fill="url(#goldGrad)" opacity="0.85"/>
+
+  <!-- Decorative stylized lash wisps on top crest -->
+  <path d="M 85 40 Q 95 28 100 24 Q 105 28 115 40" fill="none" stroke="url(#goldGrad)" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M 72 48 Q 85 36 92 31" fill="none" stroke="url(#goldGrad)" stroke-width="1.4" stroke-linecap="round"/>
+  <path d="M 128 48 Q 115 36 108 31" fill="none" stroke="url(#goldGrad)" stroke-width="1.4" stroke-linecap="round"/>
+
+  <!-- Sparkle stars -->
+  <g fill="url(#goldGrad)">
+    <!-- Top center star -->
+    <path d="M 100 16 Q 100 22 105 22 Q 100 22 100 28 Q 100 22 95 22 Q 100 22 100 16 Z"/>
+    <!-- Bottom small star -->
+    <path d="M 100 166 Q 100 170 103 170 Q 100 170 100 174 Q 100 170 97 170 Q 100 170 100 166 Z" opacity="0.8"/>
+  </g>
+
+  <!-- Elegant Intertwined Monogram "L" -->
+  <g filter="url(#subtleGlow)">
+    <!-- Calligraphic 'L' -->
+    <path d="M 85 62 C 87 56 94 54 99 54 C 104 54 107 57 107 63 C 107 72 98 84 89 101 C 77 122 73 135 73 143 C 73 150 78 153 87 153 C 98 153 113 147 129 135 C 132 133 134 135 133 138 C 122 149 105 157 91 157 C 76 157 66 149 66 137 C 66 126 71 110 82 89 C 89 74 96 64 96 59 C 96 57 94 56 92 56 C 87 56 82 61 80 65 Z" 
+          fill="url(#goldGrad)"/>
+    <!-- Secondary flourish looping through the L for luxury vibe -->
+    <path d="M 82 108 C 96 104 116 104 128 113 C 134 118 136 124 133 129 C 130 134 124 134 119 130 C 112 124 102 121 90 123" 
+          fill="none" stroke="url(#goldGrad)" stroke-width="2" stroke-linecap="round" opacity="0.95"/>
+  </g>
+</svg>

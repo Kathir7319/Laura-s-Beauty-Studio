@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  h1, h2, h3, h4, .font-serif {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+}
+
+/* Custom Luxury Gradients & Accents */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #B28551 0%, #C39B64 45%, #E5C79F 70%, #946B42 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-gradient-bg {
+  background: linear-gradient(135deg, #C39B64 0%, #DFCBAB 50%, #B28551 100%);
+}
+
+.rose-gradient-bg {
+  background: linear-gradient(135deg, #C8786B 0%, #DD9E93 50%, #B0594B 100%);
+}
+
+.card-hover {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 32px -8px rgba(195, 155, 100, 0.2);
+}
+
+/* Glassmorphism */
+.glass-nav {
+  background: rgba(253, 251, 249, 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(223, 203, 170, 0.35);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF6F2;
+}
+::-webkit-scrollbar-thumb {
+  background: #DFCBAA;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C39B64;
+}
